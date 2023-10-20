@@ -1,3 +1,6 @@
+esp8266:
+  board: d1_mini
+
 substitutions:
   name: nfc-reader-template
   friendly_name: NFC Reader Template
