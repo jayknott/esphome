@@ -1,5 +1,26 @@
+substitutions:
+  name: nfc-reader-template
+  friendly_name: NFC Reader Template
+
 dashboard_import:
   package_import_url: github://jayknott/esphome/nfc-reader.yaml
+
+logger:
+
+wifi:
+  ap:
+    ssid: "${friendly_name} Fallback Hotspot"
+    password: "fw1O62JPCvTp"
+
+captive_portal:
+
+api:
+
+ota:
+
+dashboard_import:
+  package_import_url: github://jayknott/esphome/nfc-reader.yaml
+  import_full_config: false
 
 esphome:
   name: $name
