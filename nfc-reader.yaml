@@ -5,8 +5,8 @@ substitutions:
   name: nfc-reader-template
   friendly_name: NFC Reader Template
 
-dashboard_import:
-  package_import_url: github://jayknott/esphome/nfc-reader.yaml
+# dashboard_import:
+#   package_import_url: github://jayknott/esphome/nfc-reader.yaml
 
 logger:
 
