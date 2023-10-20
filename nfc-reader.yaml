@@ -13,12 +13,9 @@ logger:
 ota:
 
 wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: "${friendly_name} Fallback Hotspot"
+    ssid: "${friendly_name} Hotspot"
     password: "fw1O62JPCvTp"
 
 improv_serial:
@@ -28,6 +25,10 @@ captive_portal:
 esphome:
   name: $name
   friendly_name: $friendly_name
+  name_add_mac_suffix: true
+  project:
+    name: jayknott.nfc-reader
+    version: "1.0"
   on_boot:
     priority: -10
     then:
