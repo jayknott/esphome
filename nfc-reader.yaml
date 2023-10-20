@@ -5,6 +5,7 @@ substitutions:
 logger:
 
 ota:
+  password: "b00ea0ae27a648c373057e45f64cddd6"
 
 wifi:
   ssid: !secret wifi_ssid
