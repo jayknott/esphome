@@ -9,7 +9,7 @@ logger:
 
 wifi:
   ap:
-    ssid: "${friendly_name} Fallback Hotspot"
+    ssid: "${name}"
     password: "fw1O62JPCvTp"
 
 captive_portal:
