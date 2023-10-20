@@ -1,19 +1,12 @@
-# esp8266:
-#   board: d1_mini
-
 substitutions:
   name: nfc
   friendly_name: NFC Reader
 
-# Enable logging
 logger:
-  # level: VERY_VERBOSE
-  # level: VERBOSE
 
 ota:
 
 wifi:
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "${friendly_name} Hotspot"
     password: "fw1O62JPCvTp"
@@ -21,6 +14,9 @@ wifi:
 improv_serial:
 
 captive_portal:
+
+dashboard_import:
+  package_import_url: github://jayknott/esphome/nfc-reader.yaml
 
 esphome:
   name: $name
